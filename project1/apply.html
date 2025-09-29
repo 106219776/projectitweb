@@ -7,10 +7,13 @@
     <meta name="author" content="Lê Ngọc Minh Trang">
     <link rel="stylesheet" href="styles/style.css">
     <title>Job Application</title>
+    
 </head>
 <body>
+    <h1>Submit Job Application</h1>
+
     <!-- Creating all required Registration application page for website done also in order-->
-    <form action="submit application" method="post">
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
             <label for="Job reference number">Job reference number : </label><br>
             <select id="Job reference number" name="Job reference number">
                 <option value="" selected disabled> Click to see options </option>
@@ -61,9 +64,12 @@
         pattern="[a-zA-Z]+" min="0"  max="40">
         <br>
 
+        <!--Dropdown list for State selection-->
         <label for="State">State : </label><br>
         <select id="State" name="State">
             <option value="" selected disabled> Select State </option>
+            <!--Line 71 can act as a guide for the user to select their state when 
+            clicked and they can see all the options first instead of just VIC-->
             <option value="1">VIC</option>
             <option value="2">NSW</option>
             <option value="3">QLD</option>
@@ -95,13 +101,17 @@
         <label for="Phone number">Phone number: </label><br>
         <input type="text" id="Phone number"
         placeholder = "Enter Phone number" 
-        pattern="[0-9].{8}|.{12}" 
-        name="Phone number">
+        pattern="^\d{8}|\d{12}"
+        name="Phone number">    
+        <!--Type to enter is text since number input is incremented or decremented only and have this input enter 
+        or digits as phone numbers do not contain any characters or symbols-->
+        <!--pattern is used to either enter 8 digits or 12 digits-->
         <br>
+
         <!--Submission is to be sent to the link provided by entering Apply-->
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-            <input type="submit" value="Apply"><br>
-        </form>
+
+            <input type="submit" value="Apply">
+            <br>
 
         <input type="checkbox" id="Requirement3" name="Required technical list" >
         <label for="Requirement3">R3</label><br>
