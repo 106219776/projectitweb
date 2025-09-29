@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="content">
+    <meta name="keywords" content="content">
+    <meta name="author" content="Lê Ngọc Minh Trang">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Job Application</title>
+</head>
+<body>
+    <!-- Creating all required Registration application page for website done also in order-->
+    <form action="submit application" method="post">
+            <label for="Job reference number">Job reference number : </label><br>
+            <select id="Job reference number" name="Job reference number">
+                <option value="" selected disabled> Click to see options </option>
+                <option value="Random1">IT Support Technician</option>
+                <option value="Random2">Software Developer</option>
+            </select>
+            <br>
+        
+        <!--Input and Label for First Name to be entered-->
+        <label for="First Name">First Name: </label><br>
+        <input type="text" placeholder="First Name" 
+        pattern="[a-zA-Z]+" 
+        name="First Name" min="0"  max="20">
+        <br>
+
+        <!--Input and Label for Last Name to be entered-->
+        <label for="Last Name">Last Name: </label><br>
+        <input type="text" placeholder="Last Name" 
+        pattern="[a-zA-Z]+" 
+        name="Last Name" min="0"  max="20">
+        <br>
+
+        <!--Input and Label for Date of birth to be entered in the format of dd/mm/yyyy-->
+        <!--The format would also be shown or mentioned since there are various types of date formats-->
+        <label for="Date of birth"> Date of birth (dd/mm/yyyy)  </label><br>
+        <input type="text" placeholder="Date of birth" 
+        pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" 
+        name="Date of birth">
+        <br>
+
+        <fieldset id="MF" name="Gender">
+                <legend>Pick your gender</legend>
+                <input type="radio" id="malegender" name="Gender" value="Male" checked>
+                <label for="malegender">Male</label><br>
+                <input type="radio" id="femalegender" name="Gender" value="Female" checked>
+                <label for="fmalegender">Female</label><br>
+                <input type="radio" id="None" name="Gender" value="Rather not disclose" checked>
+                <label for="None">Rather not disclose</label><br>
+        </fieldset>
+
+        <label for="Street Address">Street Address </label><br>
+        <input type="text" placeholder="Enter Street Address" 
+        name="Street Address" min="0"  max="40">
+        <br>
+
+        <label for="Suburb/town">Suburb/town: </label><br>
+        <input type="text" placeholder="Enter Suburb/Town" 
+        pattern="[a-zA-Z]+" min="0"  max="40">
+        <br>
+
+        <label for="State">State : </label><br>
+        <select id="State" name="State">
+            <option value="" selected disabled> Select State </option>
+            <option value="1">VIC</option>
+            <option value="2">NSW</option>
+            <option value="3">QLD</option>
+            <option value="4">NT</option>
+            <option value="5">WA</option>
+            <option value="6">SA</option>
+            <option value="7">TAS</option>
+            <option value="8">ACT</option>
+        </select>
+        <br>
+
+        <!--Postcode on form with only accepting format of 4 digits of Numbers-->
+        <label for="Postcode">Postcode: </label><br>
+        <input type="text" id="Postcode"
+        placeholder = "Enter Postcode" 
+        pattern="[0-9].{4}"  name="Postcode" >
+        <br>
+
+        <!--Email address that would need @ for validation and after the dot must have more-->
+        <label for="Email address">Email address:  </label><br>
+        <input type="text" id="Email" 
+        placeholder = "Enter Email address"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        name="Email address" 
+        min="0"  max="20" >
+        <br>
+        
+        <!--Phone number on form with only accepting format of 8 or 12 digits of 0 to 9 to be entered-->
+        <label for="Phone number">Phone number: </label><br>
+        <input type="text" id="Phone number"
+        placeholder = "Enter Phone number" 
+        pattern="[0-9].{8}|.{12}" 
+        name="Phone number">
+        <br>
+        <!--Submission is to be sent to the link provided by entering Apply-->
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <input type="submit" value="Apply"><br>
+        </form>
+
+        <input type="checkbox" id="Requirement3" name="Required technical list" >
+        <label for="Requirement3">R3</label><br>
+        <input type="checkbox" id="Requirement2" name="Required technical list" > 
+        <label for="Requirement2">R2</label><br>
+        <input type="checkbox" id="Requirement1" name="Required technical list" >
+        <label for="Requirement1">R1</label><br>    
+
+    </form>
+</body>
+</html>`
