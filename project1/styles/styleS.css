@@ -1,0 +1,80 @@
+/*Body style*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Add background color to the navigation bar*/
+.navbar {
+    overflow: hidden;
+    background-color:darkslategray;
+    display:flex;
+    justify-content: center;
+
+}
+
+/*Style the links in the navigation bar*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 50px 20px;
+}
+
+/*Change background color on hover*/
+.navbar a:hover {
+    background-color:rgb(59, 97, 97);
+}
+
+/*Add color on active page*/
+.navbar a:active {
+    background-color:rgb(36, 61, 61);
+}
+
+.navbar a.selected {
+    background-color:rgb(36, 61, 61);
+    color: white;
+}
+
+/*Style the form*/
+/*body {
+    background-color: #132043;
+}
+h1 {
+    text-align: center;
+    color: #FDF0F0;
+}
+p {
+    text-align: center;
+    color: #F184BB;
+}
+fieldset {
+    background-color: #1F4172;
+    margin: auto;
+    width: 50%;
+    border: 2px solid #F184BB;
+    border-radius: 5px;
+    padding: 20px;
+    color: #FDF0F0;
+}
+legend{
+    font-size: large;
+    font-weight: bold;
+    color: #F184BB;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+/*Style the form*/
+/*Darkeest blue #132043 */
+/*Dark blue #1F4172 */
+/*Pink #F184BB */
+/*Cream #FDF0F0 */
