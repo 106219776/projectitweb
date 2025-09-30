@@ -1,32 +1,30 @@
-/*GENERAL*/
+/* GENERAL */
 * {
     box-sizing: border-box;
 }
 
 html { /*make sure the html and body take full height*/
-    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     display: flex; /*make the body a flex container with column direction*/
     flex-direction: column;
     min-height: 100vh;
-    margin: 0; /*remove default margin and padding*/
+    margin: 0; 
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
     line-height: 1.5;
     font-size: 16px;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-/*NAVIGATION BAR*/
+/* NAVIGATION BAR */
 nav { /*style the navigation bar*/
     display: flex;
     justify-content: center;
     background-color: #132043;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
 nav ul { /*style the unordered list inside the navbar*/
@@ -44,7 +42,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: #FDF0F0;
-    transition: 0.3s;
+    transition: background-color 0.5s;
 }
 
 nav a:hover { /*hover effect for nav links*/
@@ -57,24 +55,20 @@ nav a.selected { /*style for the selected nav link*/
 }
 
 
+/* INDEX CONTENT */
+.index {
+    background-image:url(images/hex-bg.png);
+    background-size:contain;
+}
 
-
-
-
-
-
-
-
-
-
-/*INDEX CONTENT*/
 .introduction { /*add background to introduction section*/
     padding: 5%;
     text-align: center;
-    background-image: linear-gradient(#0000004b, #0e0e0e), url('../images/it.png');
+    background-image: linear-gradient(#0000004b, #132043), url('../images/it.png');
     background-size: cover;
     background-position: center;
     color: #FDF0F0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .introduction h1 { /*main heading*/
@@ -93,14 +87,15 @@ nav a.selected { /*style for the selected nav link*/
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .positions-container .section { /*individual sections*/
     padding: 20px;
     border: 2px solid #F1B4BB;
-    background-color: #6868683a;
-    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .positions-container .section p { /*paragraphs inside sections*/
@@ -112,24 +107,146 @@ nav a.selected { /*style for the selected nav link*/
     background-color: #F1B4BB;
     color: #132043;
     border-color: #F1B4BB;
-    box-shadow: 0 10px 20px #f1b4bb34;
+    box-shadow: 0 10px 20px rgba(241, 180, 187, 0.3); 
 }
 
 .about-button { /*style for the "About Us" button*/
     padding: 10px 20px;
     margin-top: 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px; 
     font-size: 16px;
     cursor: pointer;
     background-color: #F1B4BB;
     color: #132043;
-    transition: 0.3s;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+    margin-bottom: 50px;
 }
 
 .about-button:hover { /*hover effect for the button*/
     background-color: #132043;
-    color:#F1B4BB;
+    color: #FDF0F0;
+    transform: translateY(-2px);
+}
+
+.job-list {
+    background-color: #F1B4BB;
+    border-radius: 5px; 
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(241, 180, 187, 0.5);
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.job-list h2 {
+    text-align: center;
+    margin-bottom: 20px auto;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom:2px solid #FDF0F0;
+    border-width: 2px;
+}
+
+.job-list div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.job {
+    background-color: #FDF0F0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(241, 180, 187, 0.5); 
+    max-width: 300px;
+    transition: box-shadow 0.5s;
+}
+
+.job:hover {
+    box-shadow: 0 5px 15px rgba(19, 32, 67, 0.2);
+}
+
+.learn-more {
+    background-color: #132043;
+    color: #FDF0F0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.5s;
+}
+
+.learn-more:hover {
+    background-color: #1F4172;
+}
+
+/* TEAM */
+.team-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #eef2ff;
+    border-radius: 5px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #132043;
+    margin-bottom: 5px;
+}
+
+.team-section p {
+    font-size: 1.1em;
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+/* MEMBERS */
+.team {
+    display: grid;
+    /* 4 columns on desktop, minimum item width of 250px */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.member {
+    background-color: transparent;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(19, 32, 67, 0.2);
+}
+
+.picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    border: 5px solid #F1B4BB;
+    box-shadow: 0 0 0 2px #FDF0F0;
+    display: block;
+}
+
+.name {
+    font-size: 1.4em;
+    color: #132043;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 0.95em;
+    color: #6b7280;
 }
 
 
@@ -211,22 +328,24 @@ margin-bottom: 20px;
 }
 
 /*FOOTER*/
-.footer-bar { /*style the footer bar*/
+.footer-bar {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 10px;
-    height: 50px;
+    padding: 10px 20px;
+    height: auto;
+    min-height: 50px;
     margin-top: auto;
     background-color: #132043;
     font-size: 14px;
-    color: white;
+    color: #FDF0F0;
 }
 
 .footer-bar a { /*style the Jira link in footer*/
     margin-left: auto;
-    color: white;
+    color: #FDF0F0;
     text-decoration: none;
+    transition: text-decoration 0.5s;
 }
 
 .footer-bar a:hover { /*add underline on links when hover*/
