@@ -142,6 +142,41 @@ nav a.selected { /*style for the selected nav link*/
 
 
 
+/*ABOUT US CONTENT*/
+
+.welcome { /*style the about section*/
+    padding: 5%;
+    text-align: center;
+    background-color: #132043;
+    color: #F1B4BB;
+}
+
+.welcome h1 {/*main heading*/
+font-size:40px;
+margin-bottom: 20px;
+}
+
+.about-us { /*style the about text*/
+    border: 2px solid #F1B4BB;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FDF0F0;
+    color: #132043;
+}
+.about-us h2 { /*subheading inside about text*/
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-us p { /*paragraphs inside about text*/
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    float: left;
+    
+}
+
 /*FOOTER*/
 .footer-bar { /*style the footer bar*/
     display: flex;
