@@ -18,18 +18,9 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    letter-spacing: 0.8px;
     font-size: 16px;
     overflow-x:hidden;
 }
-
-
-
-
-
-
-
-
 
 /*NAVIGATION BAR*/
 nav { /*style the navigation bar*/
@@ -43,13 +34,13 @@ nav ul { /*style the unordered list inside the navbar*/
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 nav a { 
     display: block;
-    padding: 20px 30px;
-    font-size: 15px;
+    padding: 1em 2em;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     color: #FDF0F0;
