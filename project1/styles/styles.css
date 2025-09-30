@@ -265,8 +265,8 @@ nav a.selected { /*style for the selected nav link*/
 
 .jobs h3 {
     font-size: larger;
-    margin-bottom: 0.4rem;
-    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
     margin-left: 0.2rem;
     color: black
 }
@@ -280,7 +280,36 @@ nav a.selected { /*style for the selected nav link*/
 .jobs p, li {
     line-height: 1.6;
     margin-left: 0.65em;
+    
 }
+
+.job-des { 
+    padding: 20px;
+    text-align: auto;
+    background-color: #dae3fc;
+    border-radius: 5px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.job-info {
+    text-align: auto;
+    background-color: #e7ecfe;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin-top: 1.5rem;
+}
+
+.jobs {
+    background-image:url(images/hex-bg.png);
+    background-size:contain;
+}
+<!--refrenced from Trang who works on index-->
+
+
 
 
 
