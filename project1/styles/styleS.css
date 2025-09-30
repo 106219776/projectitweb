@@ -260,11 +260,18 @@ nav a.selected { /*style for the selected nav link*/
 .jobs h2 {
     font-size: 1.5rem;
     margin-top: 1.5em;
+    color: #132043
+}
+
+.jobs h3 {
+    font-size: medium;
+    margin-bottom: 0.5rem;
     color: black
 }
 
 .jobs p, li{
     line-height: 1.6;
+    margin-left: 0.5em;
 }
 
 
