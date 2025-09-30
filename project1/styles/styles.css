@@ -125,6 +125,7 @@ nav a.selected { /*style for the selected nav link*/
     background-color: #F1B4BB;
     color: #132043;
     transition: 0.3s;
+    margin-bottom: 50px;
 }
 
 .about-button:hover { /*hover effect for the button*/
@@ -132,6 +133,70 @@ nav a.selected { /*style for the selected nav link*/
     color:#F1B4BB;
 }
 
+.job-list {
+    background-color:#F1B4BB;
+    border: radius 2px;
+    padding: 40px;
+    box-shadow: 0 5px 15px #F1B4BB;
+}
+
+.job-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    width:100%;
+    border-bottom:2px solid #FDF0F0;
+    border-width: 2px;
+}
+
+.job-list div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.job {
+    background-color: #FDF0F0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #F1B4BB;
+    max-width: 300px;
+}
+
+.job:hover {
+    box-shadow: 0 5px 15px #1b2c5c2b;
+}
+
+.learn-more {
+    background-color:#1b2b5a;
+    color:#FDF0F0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0,3s;
+}
+
+.learn-more:hover {
+    background-color: #3757a3;
+}
+
+.team-section {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.team-members {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
 
 /*JOBS CONTENT*/
 
